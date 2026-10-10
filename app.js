@@ -1,14 +1,14 @@
 (() => {
   'use strict';
   const categories = {
-    restaurant: {label:'식당', color:'#b7643e', path:'M5 3v6m3-6v6m3-6v6M5 6h6m-3 3v12M18 3c-3 2-3 8 0 8h2V3h-2Zm2 8v10'},
-    cafe: {label:'카페', color:'#917448', path:'M4 8h13v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Zm13 1h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2'},
-    grocery: {label:'식품', color:'#507a4d', path:'M3 4h3l2 12h11l2-9H7M9 20h.01M18 20h.01'},
-    shopping: {label:'쇼핑', color:'#716591', path:'M5 8h14l1 13H4L5 8Zm4 0V6a3 3 0 0 1 6 0v2'},
-    beauty: {label:'뷰티', color:'#aa6585', path:'m8 8 12 12M8 16 20 4M7 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm0 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'},
-    medical: {label:'의료', color:'#3d8690', path:'M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z'},
-    sport: {label:'스포츠', color:'#5276a1', path:'M5 8v8m3-10v12m8-12v12m3-10v8M8 12h8M2 10v4m20-4v4'},
-    other: {label:'기관·기타', color:'#64756e', path:'m3 9 9-6 9 6H3Zm2 3v7m5-7v7m4-7v7m5-7v7M3 21h18'}
+    restaurant: {label:'식당', color:'#b23a3e', path:'M5 3v6m3-6v6m3-6v6M5 6h6m-3 3v12M18 3c-3 2-3 8 0 8h2V3h-2Zm2 8v10'},
+    cafe: {label:'카페', color:'#a57423', path:'M4 8h13v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Zm13 1h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2'},
+    grocery: {label:'식품', color:'#687950', path:'M3 4h3l2 12h11l2-9H7M9 20h.01M18 20h.01'},
+    shopping: {label:'쇼핑', color:'#746584', path:'M5 8h14l1 13H4L5 8Zm4 0V6a3 3 0 0 1 6 0v2'},
+    beauty: {label:'뷰티', color:'#ac6c7e', path:'m8 8 12 12M8 16 20 4M7 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm0 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'},
+    medical: {label:'의료', color:'#287e86', path:'M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z'},
+    sport: {label:'스포츠', color:'#346c94', path:'M5 8v8m3-10v12m8-12v12m3-10v8M8 12h8M2 10v4m20-4v4'},
+    other: {label:'기관·기타', color:'#6c7376', path:'m3 9 9-6 9 6H3Zm2 3v7m5-7v7m4-7v7m5-7v7M3 21h18'}
   };
   const places = window.BUSINESSES || [];
   const byId = new Map(places.map(p => [p.id,p]));
