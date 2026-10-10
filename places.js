@@ -471,5 +471,16 @@ window.BUSINESSES = [
     "phone": "+34 617 02 24 54",
     "google": "https://maps.google.com/?cid=10357500502843321448",
     "website": "https://www.instagram.com/matna_barcelona?igsh=MWFrYmcyYXFndXk3OA=="
+  },
+  {
+    "id": "44",
+    "name": "DUNAM KIMCHI(두남김치)",
+    "lat": 41.5343094,
+    "lng": 2.3620105,
+    "category": "grocery",
+    "address": "Polígono Industrial la Baileta, Carrer A, Nave 9, 08348 Cabrils, Barcelona",
+    "phone": "+34 616 444 856",
+    "google": "https://www.google.com/maps/place/?q=place_id:ChIJGVTr9_aKpBIRBS8r4-vti_I",
+    "website": "https://www.dunamkimchi.com/"
   }
 ];
