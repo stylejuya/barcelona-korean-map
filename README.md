@@ -1,13 +1,20 @@
 # 바르셀로나 한인 비즈니스 지도
 
-바르셀로나 한인 업체와 장소 43곳을 담은 Google My Maps를 표시하는 웹페이지입니다.
+카탈루냐 한인회에서 제공하는 바르셀로나 한인 업체와 장소 43곳 지도입니다.
 
 - 업체 이름: 영문(한글)
 - 업종에 따른 지도 아이콘
 - 모바일 화면 지원
-- 원본 지도 변경 사항 자동 반영
+- 업종별 필터와 업체명·주소 검색
+- 업체 카드, 전화, 웹사이트, Google 지도 사진·리뷰와 길찾기
+- 사용자가 위치 권한을 허용하면 가까운 순으로 정렬 (직선거리)
+- 카카오톡 Koreanbcn 제보 안내
 
 [Google 지도 열기](https://www.google.com/maps/d/viewer?mid=11Oh1D7WD_zCbgVHFe19dcBNYHgOxUuM)
+
+[지도 웹사이트](https://stylejuya.github.io/barcelona-korean-map/)
+
+지도는 Leaflet과 OpenStreetMap으로 표시합니다. `places.js`는 원본 지도에서 가져온 업체 정보이며, 원본 변경 시 다시 갱신해야 합니다. 현재 위치는 서버에 저장하지 않고 브라우저에서 거리 계산에만 사용합니다. 사진과 리뷰는 Google 지도에서 열립니다.
 
 ## GitHub Pages
 

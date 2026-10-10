@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="바르셀로나의 한인 업체와 장소 43곳을 영문·한글 이름과 업종별 아이콘으로 살펴보세요.">
   <title>바르셀로나 한인 비즈니스 지도</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="explore.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="places.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
   <div class="site-top"><div class="brand"><span class="brand-mark" aria-hidden="true">한</span>카탈루냐 한인회</div><span class="top-note">바르셀로나의 한인 비즈니스를 연결합니다</span></div>
@@ -20,9 +25,22 @@
   </header>
   <main aria-label="바르셀로나 한인 업체 지도">
     <section class="map-panel" aria-label="한인 비즈니스 지도">
-      <div class="map-toolbar"><div class="map-title">한인 비즈니스 지도 <span class="count">43곳</span></div><span class="map-hint">아이콘을 눌러 업체 정보를 확인하세요</span></div>
-      <div class="map"><iframe title="바르셀로나 한인 비즈니스 43곳 지도" src="https://www.google.com/maps/d/embed?mid=11Oh1D7WD_zCbgVHFe19dcBNYHgOxUuM&amp;ehbc=2E312F&amp;ll=41.38343263630867%2C2.151245250000011&amp;z=13" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <ul class="legend" aria-label="업종 아이콘 안내"><li><span class="legend-icon" aria-hidden="true">♨</span>식당·카페</li><li><span class="legend-icon" aria-hidden="true">▤</span>식품·쇼핑</li><li><span class="legend-icon" aria-hidden="true">✂</span>뷰티</li><li><span class="legend-icon" aria-hidden="true">✚</span>의료</li><li><span class="legend-icon" aria-hidden="true">⚑</span>스포츠</li><li><span class="legend-icon" aria-hidden="true">ⓘ</span>기관·기타</li></ul>
+      <div class="map-toolbar"><div class="map-title">한인 비즈니스 지도 <span class="count" id="result-count">43곳</span></div><button class="text-button" type="button" id="show-all">전체 지도 보기</button></div>
+      <div class="explore-controls">
+        <label class="search-box"><span class="sr-only">업체명 또는 주소 검색</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" placeholder="업체명 또는 주소 검색" autocomplete="off"></label>
+        <button class="nearby-button" type="button" id="nearby">◎ 내 주변 업체</button>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="업종 필터"></div>
+      <p class="location-status" id="location-status" role="status" aria-live="polite">내 주변을 누르면 위치를 확인하고 직선거리 기준으로 정렬합니다.</p>
+      <div class="explorer">
+        <aside class="business-sidebar" aria-label="업체 목록과 상세 정보">
+          <div class="results-summary" id="results-summary" role="status" aria-live="polite"></div>
+          <article class="detail-card" id="detail-card" aria-label="선택한 업체 상세 정보" hidden></article>
+          <div class="business-list" id="business-list"></div>
+        </aside>
+        <div class="map" id="map" aria-label="업체 위치 지도"><p class="map-loading" id="map-loading">지도를 불러오는 중입니다.</p></div>
+      </div>
+      <noscript><p class="noscript">검색과 지도를 사용하려면 JavaScript를 켜 주세요. <a href="https://www.google.com/maps/d/viewer?mid=11Oh1D7WD_zCbgVHFe19dcBNYHgOxUuM">Google 지도에서 보기</a></p></noscript>
     </section>
     <section class="report" aria-labelledby="report-title">
       <div>
@@ -37,7 +55,7 @@
       </div>
     </section>
   </main>
-  <footer><p>지도 아이콘을 선택하면 업체 정보를 볼 수 있습니다. 영업시간과 운영 여부는 방문 전 업체에 확인해 주세요.</p><p>Google My Maps의 최신 지도 정보를 표시합니다.</p></footer>
+  <footer><p>영업시간과 운영 여부는 방문 전 업체에 확인해 주세요.</p><p>업체 정보: 카탈루냐 한인회 · Google My Maps / 지도: OpenStreetMap</p></footer>
   <script>
     document.getElementById('copy-kakao').addEventListener('click', async () => {
       const status = document.getElementById('copy-status');
