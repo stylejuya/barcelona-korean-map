@@ -7,7 +7,7 @@
     shopping: {label:'쇼핑', color:'#746584', path:'M5 8h14l1 13H4L5 8Zm4 0V6a3 3 0 0 1 6 0v2'},
     beauty: {label:'뷰티', color:'#ac6c7e', path:'m8 8 12 12M8 16 20 4M7 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm0 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'},
     medical: {label:'의료', color:'#287e86', path:'M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z'},
-    sport: {label:'태권도·스포츠', color:'#346c94', path:'M10.5 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM9 7l-2 6 4 2-3 6M7 13l8-4 7-1M9 8l4 1 2-3M8 9l-3 2-3-1'},
+    sport: {label:'태권도·스포츠', color:'#346c94', path:'M8 3 3 6 1 11l4 2 2-4-1 12h12L17 9l2 4 4-2-2-5-5-3M8 3l4 7 4-7M6.5 14h11M6.5 16h11M11 14h2v2h-2ZM12 16l-2 4m3-4 2 3'},
     culture: {label:'교육·문화', color:'#78558f', path:'M12 5C8 3 5 3 2 4v15c3-1 6-1 10 1m0-15c4-2 7-2 10-1v15c-3-1-6-1-10 1V5Z'},
     travel: {label:'여행', color:'#a46c35', path:'M8 6V3h8v3M4 6h16v14H4V6Zm4 0v14m8-14v14M6 20v1m12-1v1'},
     other: {label:'기관·기타', color:'#6c7376', path:'m3 9 9-6 9 6H3Zm2 3v7m5-7v7m4-7v7m5-7v7M3 21h18'}
