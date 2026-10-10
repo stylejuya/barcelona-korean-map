@@ -19,7 +19,8 @@ window.BUSINESSES = [
     "address": "Plaça de Sant Josep Oriol, 9999, Ciutat Vella, 08002 Barcelona",
     "phone": "",
     "google": "https://maps.google.com/?cid=4036865961969035948",
-    "website": "https://cafe.naver.com/spainzzang"
+    "website": "https://cafe.naver.com/spainzzang",
+    "kakao": "spainzzangcenter"
   },
   {
     "id": "3",
