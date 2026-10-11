@@ -1,6 +1,10 @@
 'use strict';
 (() => {
   const phrases = [
+    ["제작자 후원","Apoya al creador","Dona suport al creador","Support the creator"],
+    ["ERC-20 토큰 주소","Dirección de tokens ERC-20","Adreça de tokens ERC-20","ERC-20 token address"],
+    ["ERC-20 지갑 주소 QR 코드","Código QR de la dirección ERC-20","Codi QR de l’adreça ERC-20","ERC-20 wallet address QR code"],
+    ["QR 코드를 스캔해 주소를 확인하세요.","Escanea el QR para ver la dirección.","Escaneja el QR per veure l’adreça.","Scan the QR code to view the address."],
   [
     "카탈루냐 한인회",
     "Asociación Coreana de Cataluña",
